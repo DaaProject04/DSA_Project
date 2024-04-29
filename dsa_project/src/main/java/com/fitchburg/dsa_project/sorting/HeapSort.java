@@ -35,6 +35,7 @@ public class HeapSort {
         int left = 2 * i + 1; // left = 2*i + 1
         int right = 2 * i + 2; // right = 2*i + 2
 
+
         // If left child is larger than root
         if (left < size && list.get(left).getId() > list.get(largest).getId()) {
             largest = left;

@@ -26,7 +26,8 @@ public class InsertionSort {
     }
 
     private void insertionBySalery(List<Person> list) {
-        int i, j;
+        int i;
+        int j;
         for (i = 1; i < list.size(); i++) {
             Person tmp = list.get(i);
             j = i;
@@ -39,7 +40,8 @@ public class InsertionSort {
     }
 
     private void insertionByName(List<Person> list) {
-        int i, j;
+        int i;
+        int j;
         for (i = 1; i < list.size(); i++) {
             Person tmp = list.get(i);
             j = i;
@@ -52,7 +54,8 @@ public class InsertionSort {
     }
 
     private void insertionById(List<Person> list) {
-        int i, j;
+        int i;
+        int j;
         for (i = 1; i < list.size(); i++) {
             Person tmp = list.get(i);
             j = i;
