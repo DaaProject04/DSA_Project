@@ -14,8 +14,9 @@ public class PersonService {
     static MergeSort merrgeSort=new MergeSort();
     static InsertionSort insertionSort=new InsertionSort();
     static HeapSort heapSort=new HeapSort();
-
-    private static List<Person> addPersondToList(){
+    
+    //creating list dataypes and  inserting data 
+    public List<Person> addPersondToList(){
         return Arrays.asList(
             new Person(12,"vosifev-ewi7","vosifev-ewi7@outlook.com",2250),
             new Person(15,"vijubat-ojo38","vijubat-ojo38@gmail.com",4369),
@@ -35,7 +36,7 @@ public class PersonService {
         );
     }
 
-
+    //code to calcuta space complexity
     public InfoPerson mergeSortById() {
         double initialTime=(double)(System.currentTimeMillis());
         List<Person> list=addPersondToList();
@@ -48,7 +49,7 @@ public class PersonService {
         inf.setInfo(j);
         return inf;
     }
-
+    // code used for implementing sortingbyname
     public InfoPerson mergeSortByName() {
         double initialTime=(double)(System.currentTimeMillis());
         List<Person> list=addPersondToList();
@@ -61,7 +62,7 @@ public class PersonService {
         inf.setInfo(j);
         return inf;
     }
-
+    //code used  for implementing sortingbysalary
     public InfoPerson mergeSortBySalery() {
         double initialTime=(double)(System.currentTimeMillis());
         List<Person> list=addPersondToList();
@@ -75,7 +76,7 @@ public class PersonService {
         return inf;
         
     }
-
+    //code used  for implementing sortingbyId
     public InfoPerson insertionSortById() {
         double initialTime=(double)(System.currentTimeMillis());
         List<Person> list=addPersondToList();
@@ -89,7 +90,7 @@ public class PersonService {
         return inf;
     }
 
-
+    //code used  for implementing sortingbyName
     public InfoPerson insertionSortByName() {
         double initialTime=(double)(System.currentTimeMillis());
         List<Person> list=addPersondToList();
@@ -103,7 +104,7 @@ public class PersonService {
         return inf;
         
     }
-
+    //code used  for implementing sortingbysalary
     public InfoPerson insertionSortBySalery() {
         double initialTime=(double)(System.currentTimeMillis());
         List<Person> list=addPersondToList();
@@ -116,7 +117,7 @@ public class PersonService {
         inf.setInfo(j);
         return inf;
     }
-
+    //code used  for implementing sortingbyId
     public InfoPerson heapSortById() {
         double initialTime=(double)(System.currentTimeMillis());
         List<Person> list=addPersondToList();

@@ -24,37 +24,45 @@ class DsaProjectApplicationTests {
             assertEquals(testList.get(i).getSalery(),dataList.get(i).getSalery());
         }
 	}
-	
+
+	//used to test heapsortbyId
 	@Test
 	void testHeapSortById(){
 		comparing(personService.heapSortById().getPersons(), testData.sortById());
 	}
 
+    // used to test mergesortbyId
 	@Test
 	void testMergeSortById(){
 		comparing(personService.mergeSortById().getPersons(), testData.sortById());
 	}
 
+
+	// used to test mergesortbyname
 	@Test
 	void testMergeSortByName(){
 		comparing(personService.mergeSortByName().getPersons(), testData.sortByName());
 	}
 
+	// used to test mergesortbysalery
 	@Test
 	void testMergeSortBySalery(){
 		comparing(personService.mergeSortBySalery().getPersons(), testData.sortBySalery());
 	}
 
+	// used to test insertionsortbyid
 	@Test
 	void testInsertionSortById(){
 		comparing(personService.insertionSortById().getPersons(), testData.sortById());
 	}
 
+	//used to test insertionsortbyname
 	@Test
 	void testInsertionSortByName(){
 		comparing(personService.insertionSortByName().getPersons(), testData.sortByName());
 	}
 
+	//used to test inertionsortbysalery
 	@Test
 	void testInsertionSortBySalery(){
 		comparing(personService.insertionSortBySalery().getPersons(), testData.sortBySalery());
